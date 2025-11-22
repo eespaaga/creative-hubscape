@@ -1,0 +1,30 @@
+current directory: /home/kali/Desktop/yoddha.git/websterghoul.github.io/vendor/bundle/ruby/3.1.0/gems/atomic-1.1.101/ext
+/usr/bin/ruby3.1 -I/usr/lib/ruby/vendor_ruby extconf.rb
+checking for libkern/OSAtomic.h... no
+creating Makefile
+
+current directory: /home/kali/Desktop/yoddha.git/websterghoul.github.io/vendor/bundle/ruby/3.1.0/gems/atomic-1.1.101/ext
+make DESTDIR\= sitearchdir\=./.gem.20240310-14406-q9gulq sitelibdir\=./.gem.20240310-14406-q9gulq clean
+
+current directory: /home/kali/Desktop/yoddha.git/websterghoul.github.io/vendor/bundle/ruby/3.1.0/gems/atomic-1.1.101/ext
+make DESTDIR\= sitearchdir\=./.gem.20240310-14406-q9gulq sitelibdir\=./.gem.20240310-14406-q9gulq
+compiling atomic_reference.c
+atomic_reference.c: In function ‘ir_alloc’:
+atomic_reference.c:27:5: warning: ‘rb_data_object_alloc’ is deprecated: by: rb_data_object_wrap [-Wdeprecated-declarations]
+   27 |     return rb_data_object_alloc(klass, (void *) Qnil, ir_mark, NULL);
+      |     ^~~~~~
+In file included from /usr/include/ruby-3.1.0/ruby/internal/core.h:27,
+                 from /usr/include/ruby-3.1.0/ruby/ruby.h:28,
+                 from /usr/include/ruby-3.1.0/ruby.h:38,
+                 from atomic_reference.c:13:
+/usr/include/ruby-3.1.0/ruby/internal/core/rdata.h:367:1: note: declared here
+  367 | rb_data_object_alloc(VALUE klass, void *data, RUBY_DATA_FUNC dmark, RUBY_DATA_FUNC dfree)
+      | ^~~~~~~~~~~~~~~~~~~~
+linking shared-object atomic_reference.so
+
+current directory: /home/kali/Desktop/yoddha.git/websterghoul.github.io/vendor/bundle/ruby/3.1.0/gems/atomic-1.1.101/ext
+make DESTDIR\= sitearchdir\=./.gem.20240310-14406-q9gulq sitelibdir\=./.gem.20240310-14406-q9gulq install
+/usr/bin/install -c -m 0755 atomic_reference.so ./.gem.20240310-14406-q9gulq
+
+current directory: /home/kali/Desktop/yoddha.git/websterghoul.github.io/vendor/bundle/ruby/3.1.0/gems/atomic-1.1.101/ext
+make DESTDIR\= sitearchdir\=./.gem.20240310-14406-q9gulq sitelibdir\=./.gem.20240310-14406-q9gulq clean

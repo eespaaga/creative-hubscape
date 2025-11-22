@@ -1,0 +1,125 @@
+<!-- FILEPATH: /home/kali/Desktop/yoddha.git/websterghoul.github.io/_site/nepal.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* CSS styles for the gallery */
+        body {
+            background-color: #f2f2f2;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Media queries for responsive design */
+        @media only screen and (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .gallery {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body style="background-color: #e6f2ff;">
+    <h1>Gallery Page</h1>
+    <div class="gallery">
+        <div class="image-category">
+            <button class="btn btn-primary" onclick="toggleCategory('image-category')">Image Category</button>
+            <div id="image-category" style="display: none;">
+                <img src="image1.jpg" alt="Image 1">
+                <img src="image2.jpg" alt="Image 2">
+                <img src="image3.jpg" alt="Image 3">
+                <!-- Add more images here -->
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <div class="video-category">
+            <button class="btn btn-primary" onclick="toggleCategory('video-category')">Video Category</button>
+            <div id="video-category" style="display: none;">
+                <div class="video-container">
+                    <video src="video1.mp4" controls></video>
+                </div>
+                <div class="video-container">
+                    <video src="video2.mp4" controls></video>
+                </div>
+                <div class="video-container">
+                    <video src="video3.mp4" controls></video>
+                </div>
+                <div class="video-container">
+                    <video src="video4.mp4" controls></video>
+                </div>
+                <div class="video-container">
+                    <video src="video5.mp4" controls></video>
+                </div>
+                <div class="video-container">
+                    <video src="video6.mp4" controls></video>
+                </div>
+                <div class="video-container">
+                    <video src="video7.mp4" controls></video>
+                </div>
+                <div class="video-container">
+                    <video src="video8.mp4" controls></video>
+                </div>
+                <div class="video-container">
+                    <video src="video9.mp4" controls></video>
+                </div>
+                <div class="video-container">
+                    <video src="video10.mp4" controls></video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript code for the gallery
+        // You can add interactivity or additional functionality here
+        function toggleCategory(categoryId) {
+            var category = document.getElementById(categoryId);
+            if (category.style.display === "none") {
+                category.style.display = "block";
+            } else {
+                category.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
