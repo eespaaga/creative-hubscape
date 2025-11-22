@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "gulp",
-    "prod": "gulp build"
-  },
+  "dev": "vite",
+  "build": "tsc && vite build",
+  "build:dev": "vite build --mode development",
+  "preview": "vite preview"
+},
   "author": "Long Do",
   "license": "MIT",
   "dependencies": {
